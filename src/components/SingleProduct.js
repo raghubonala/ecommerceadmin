@@ -14,7 +14,7 @@ const SingleProduct = () => {
 
     const getData = async() => {
         try {
-            const result = await axios.get(`http://localhost:4000/single_product/${parms.id}`)
+            const result = await axios.get(`https://ecommercebackend-d2fs.onrender.com/single_product/${parms.id}`)
             setData(result.data);
             
         } catch (error) {

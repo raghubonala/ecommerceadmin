@@ -15,7 +15,7 @@ const Admin = () => {
 
     const getData = async() => {
         try {
-            const result = await axios.get("http://localhost:4000/show_product")
+            const result = await axios.get("https://ecommercebackend-d2fs.onrender.com/show_product")
             setproducts(result.data);
         } catch (error) {
             console.log(error);
@@ -24,7 +24,7 @@ const Admin = () => {
 
     const deleteProduct = async(id)=>{
         try {
-            const result = await axios.delete(`http://localhost:4000/single_product/${id}`)
+            const result = await axios.delete(`https://ecommercebackend-d2fs.onrender.com/single_product/${id}`)
             getData()
             Swal.fire({
               title: 'Success!',

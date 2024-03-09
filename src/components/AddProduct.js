@@ -25,7 +25,7 @@ const Add_Product = () => {
       })
     }else{
       try {
-        const result = await axios.post('http://localhost:4000/add_product',data)
+        const result = await axios.post('https://ecommercebackend-d2fs.onrender.com/add_product',data)
         console.log(result.data);
         Swal.fire({
           title: 'Success!',

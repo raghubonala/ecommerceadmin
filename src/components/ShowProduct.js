@@ -13,7 +13,7 @@ const ShowProduct = () => {
 
     const getData = async() => {
         try {
-            const result = await axios.get("http://localhost:4000/show_product")
+            const result = await axios.get("https://ecommercebackend-d2fs.onrender.com/show_product")
             setproducts(result.data);
         } catch (error) {
             
